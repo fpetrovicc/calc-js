@@ -1,15 +1,38 @@
+/* Importing fonts for the calculator*/
+@font-face {
+
+    font-family: 'Cursed Timer ULiL';
+    src: url(fonts/CursedTimerULiL.woff2);
+
+}
+
+@font-face {
+
+    font-family: 'Plat Nomor';
+    src: url(fonts/PlatNomor.woff2);
+
+}
+
+/* Whole page style */
+html {
+
+    background-color: rgb(199, 199, 199);
+
+}
+
+/* Calculator container style */
 .container {
-        background: gray;
+        background: #999999;
         color: white;
         border-radius: 1rem;
         position: absolute;
         top: 50%;
         left: 50%;
         width: 25rem;
-        height: 25.7rem;
+        height: 33.3rem;
         margin: 0 auto;
         margin-right: -50%;
-        transform: translate(-50%, -50%);*/
+        transform: translate(-50%, -50%);
 }
 
 .child {
@@ -18,6 +41,7 @@
 
 }
 
+/* Inner calculator style*/
 .wrapper {
 
     display: grid;
@@ -38,65 +62,76 @@
 
 .inputArea {
 
-    background: black;
+    background: #000000;
     grid-column: 1/2;
     display: block;
     border-radius: 1rem;
 
 }
-
+/* Display style */
 input[type=text] {
 
     box-sizing: border-box;
     margin-top: 20px;
     padding: 20px 30px 20px 35px;
 
-    font-size: 30px;
-    color: white;
+    font-size: 40px;
+    color: #62bb47;
     text-align: right;
 
     background: transparent;
     border: none;
     width: 21rem;
 
+    font-family: 'Cursed Timer ULiL';
+
 }
 
+/* Buttons style */
 .btnr1 {
 
-    background-color: red;
+background-color: rgb(0, 0, 0);
     text-align: center;
-    border-radius: 0.5rem;
+    border-radius: 50%;
 
 }
 
 .btnr2 {
 
-    background: blue;
+    background: black;
     text-align: center;
-    border-radius: 0.5rem;
+    border-radius: 50%;
 }
 
-.btnr1 >input {
+.btnr1 >input, .btnr2 >input {
 
     background: transparent;
     border: none;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
     align-self: end;
-    color: white;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-family: 'Plat Nomor';
+    color: #62bb47;
 
 }
 
-.btnr2 >input {
+.btnC >input {
 
+    color: #e03a3c;
+
+}
+
+/* Footer style */
+.footer {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background: transparent;
-    border: none;
-    justify-content: center;
-    align-items: center;
-    align-self: end;
-    color: white;
-    font-size: 2.5rem;
+    color: #62bb47;
+    text-align: center
 
 }
-
