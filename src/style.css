@@ -1,0 +1,102 @@
+.container {
+        background: gray;
+        color: white;
+        border-radius: 1rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 25rem;
+        height: 25.7rem;
+        margin: 0 auto;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);*/
+}
+
+.child {
+
+    padding: 1.3rem;
+
+}
+
+.wrapper {
+
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 1fr;
+
+}
+
+.buttons {
+
+    margin-top: 1rem;
+    display: grid;
+    grid-gap: 0.4rem;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.inputArea {
+
+    background: black;
+    grid-column: 1/2;
+    display: block;
+    border-radius: 1rem;
+
+}
+
+input[type=text] {
+
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 20px 30px 20px 35px;
+
+    font-size: 30px;
+    color: white;
+    text-align: right;
+
+    background: transparent;
+    border: none;
+    width: 21rem;
+
+}
+
+.btnr1 {
+
+    background-color: red;
+    text-align: center;
+    border-radius: 0.5rem;
+
+}
+
+.btnr2 {
+
+    background: blue;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.btnr1 >input {
+
+    background: transparent;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    align-self: end;
+    color: white;
+    font-size: 2.5rem;
+
+}
+
+.btnr2 >input {
+
+    background: transparent;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    align-self: end;
+    color: white;
+    font-size: 2.5rem;
+
+}
+
