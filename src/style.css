@@ -20,6 +20,23 @@ html {
 
 }
 
+/* Placeholder style */
+::-webkit-input-placeholder {
+    color: #62bb47;
+}
+
+::-moz-placeholder {
+    color: #62bb47;
+}
+
+::-ms-placeholder {
+    color: #62bb47;
+}
+
+::placeholder {
+    color: #62bb47;
+}
+
 /* Calculator container style */
 .container {
         background: #999999;
