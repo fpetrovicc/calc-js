@@ -93,10 +93,11 @@ input[type=text] {
 }
 
 /* Buttons style */
-.btnr1:hover, .btnr2:hover {
+.btnr1:hover, .btnr2:hover, .btnr1 >input, .btnr2 >input {
 
     transition-duration: 0.3s;
     background-color: #313131;
+    cursor: pointer;
 
 }
 
