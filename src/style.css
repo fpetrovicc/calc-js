@@ -1,0 +1,162 @@
+/* Importing fonts for the calculator*/
+@font-face {
+
+    font-family: 'Cursed Timer ULiL';
+    src: url(fonts/CursedTimerULiL.woff2);
+
+}
+
+@font-face {
+
+    font-family: 'Plat Nomor';
+    src: url(fonts/PlatNomor.woff2);
+
+}
+
+/* Whole page style */
+html {
+
+    background-color: rgb(199, 199, 199);
+
+}
+
+/* Calculator container style */
+.container {
+        background: #999999;
+        color: white;
+        border-radius: 1rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 25rem;
+        height: 33.3rem;
+        margin: 0 auto;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        -webkit-box-shadow: 11px 11px 8px -2px rgba(0,0,0,0.46);
+        -moz-box-shadow: 11px 11px 8px -2px rgba(0,0,0,0.46);
+        box-shadow: 11px 11px 8px -2px rgba(0,0,0,0.46);
+}
+
+.child {
+
+    padding: 1.3rem;
+
+}
+
+/* Inner calculator style*/
+.wrapper {
+
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 1fr;
+
+}
+
+.buttons {
+
+    margin-top: 1rem;
+    display: grid;
+    grid-gap: 0.4rem;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.inputArea {
+
+    background: #000000;
+    grid-column: 1/2;
+    display: block;
+    border-radius: 1rem;
+
+}
+
+/* Display style */
+input[type=text] {
+
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 20px 30px 20px 35px;
+
+    font-size: 40px;
+    color: #62bb47;
+    text-align: right;
+
+    background: transparent;
+    border: none;
+    width: 21rem;
+
+    font-family: 'Cursed Timer ULiL';
+
+}
+
+/* Buttons style */
+.btnr1:hover, .btnr2:hover {
+
+    transition-duration: 0.3s;
+    background-color: #313131;
+
+}
+
+.btnr1 {
+
+background-color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+.btnr2 {
+
+    background: black;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.btnr1 >input, .btnr2 >input {
+
+    background: transparent;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    align-self: end;
+    font-size: 3rem;
+    font-family: 'Plat Nomor';
+    color: #62bb47;
+
+}
+
+.btnC >input {
+
+    color: #e03a3c;
+
+}
+
+/* Footer style */
+.footer {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: transparent;
+    color: #62bb47;
+    text-align: center
+
+}
+
+/* Images style */
+.twitter, .github {
+
+    transform: scale(0.6);
+    margin: -20px;
+
+}
+
+.twitter {
+
+    transform: scale(0.9);
+
+}
