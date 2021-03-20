@@ -2,14 +2,14 @@
 @font-face {
 
     font-family: 'Cursed Timer ULiL';
-    src: url(fonts/CursedTimerULiL.woff2);
+    src: url(fonts/CursedTimerULiL.woff2) format('woff2');
 
 }
 
 @font-face {
 
     font-family: 'Plat Nomor';
-    src: url(fonts/PlatNomor.woff2);
+    src: url(fonts/PlatNomor.woff2) format('woff2');
 
 }
 

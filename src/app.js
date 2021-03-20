@@ -4,18 +4,17 @@ function clearField() {
 
 }
 
+function backspace() {
+
+    let field = document.getElementById("userInput").value
+
+    document.getElementById("userInput").value = field.slice(0, -1);
+
+}
+
 document.querySelector(".buttons").addEventListener("click", function(event) {
     
-    let operatorSelected;
-    let num1, num2;
-
-    function calculation(num1, num2, operatorSelected) {
-
-    }
-
     if (event.target.tagName === "INPUT") {
-
-        console.log(`btn value = ${event.target.value}`)
 
         if ($(event.target).hasClass('digit')) {
 
@@ -25,22 +24,21 @@ document.querySelector(".buttons").addEventListener("click", function(event) {
 
         if ($(event.target).hasClass('operator')) {
 
-            operatorSelected = event.target.value;
-            
-            if (!num1) {
-            
-                num1 = parseInt(document.getElementById("userInput").value);
+            document.getElementById("userInput").value += event.target.value;
+
+            var expression = document.getElementById("userInput").value;
+
+            if (event.target.value == "=") {
+
+                const parser = math.parser();
+                
+                expression = expression.replace("=", "");
+
+                let result = parser.evaluate(expression);
+
+                document.getElementById("userInput").value = parseFloat(result.toFixed(2));
 
             }
-
-            clearField();
-
-            if (event.target.value === "=") {
-
-                num2 = parseInt(document.getElementById("userInput").value);
-
-            }
-
 
         }
 
